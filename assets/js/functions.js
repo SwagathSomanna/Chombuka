@@ -291,6 +291,12 @@ jQuery( function() { "use strict";
 				if ( multiple_items ) {
 					$body.addClass( "hero-has-nav" );
 				}
+				jQuery( ".owl-item.active video", event.target ).each( function() {
+					var playPromise = this.play();
+					if ( playPromise && typeof playPromise.catch === "function" ) {
+						playPromise.catch( function() {} );
+					}
+				});
 				jQuery( '<div class="owl-expand"><a href="#"><span class="mdi"></span></a></div>' ).insertAfter( jQuery( ".owl-nav", event.target ) ).on( "click.leluxe", function ( e ) {
 					e.preventDefault();
 					if ( $body.hasClass( "expanded-hero-start" ) ) {
