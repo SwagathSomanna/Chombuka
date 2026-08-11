@@ -77,20 +77,6 @@
 
 				<div class="grid-container">
 					<div class="grid-column">
-						<form id="contact_form" action="sendmail.php">
-							<div class="message d-none">
-								<div id="contact_alert" class="alert notice"></div>
-							</div>
-							<label for="name" class="screen-reader-text">Name</label>
-							<input type="text" name="name" id="name" placeholder="Your name&hellip;" required>
-							<label for="email" class="screen-reader-text">Email</label>
-							<input type="email" name="email" id="email" placeholder="Your email&hellip;" required>
-							<label for="message" class="screen-reader-text">Message</label>
-							<textarea name="message" id="message" cols="30" rows="10" placeholder="Your message&hellip;" required></textarea>
-							<button type="submit" class="button-filled button-color">Send message</button>
-						</form>
-					</div>
-					<div class="grid-column">
 						<h4 class="no-bottom">Address:</h4>
 						<p> Chombuka, Alathmad estate, Horur Village, Kedkal Sunticoppa, Coorg 571237 <br> <a href="https://maps.app.goo.gl/2ezydhVhrvC3cz5JA" target="_blank">via Google Maps</a></p>
 
@@ -123,16 +109,5 @@
 	<script src="assets/js/modernizr-custom.js"></script>
 	<script src="assets/js/owl-carousel.min.js"></script>
 	<script src="assets/js/functions.js"></script>
-
-
-	<script src="assets/js/jquery.form.min.js"></script>
-	<script>
-		jQuery(function () {
-			// initialize ajax form plugin
-			jQuery('#contact_form').ajaxForm({
-				target: '#contact_alert'
-			});
-		});
-	</script>
 </body>
 </html>
