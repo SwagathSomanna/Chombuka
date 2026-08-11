@@ -30,14 +30,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-animations.css">
-    <style>
-        .rule li {
-            padding-bottom: 5px;
-            list-style-type: square;
-            padding-left: 6px;
-            margin-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style-custom.css">
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -113,71 +106,114 @@
         <div class="entry entry-page">
             <div class="entry-content">
                 <div class="grid-container">
-                   
-                    <div class="grid-column no-animation">
-                        <article class="entry-accomodation">
-                            <header class="entry-header">
-
+                    <div class="grid-column no-animation surroundings-panel">
+                        <article class="entry-accomodation surroundings">
+                            <header class="entry-header surroundings__intro">
                                 <h2 class="entry-title"><a>Surroundings</a></h2>
-                                <h5 style="margin-top:30px">
-                                    What's nearby
-                                </h5>
-
-                                <ul class="rule">
-                                    <li> Rastrakavi Kuvempu Park  - 8km </li>
-                                    <li> Nagarhole National Park  - 8km </li>
-                                    <li> Madikeri Fort  - 8km </li>
-                                    <li> Rajaseat Park  - 8km </li>
-                                    <li> Raja Seat  - 8km </li>
-                                </ul>
-
-
+                                <p class="surroundings__lead">
+                                    Coffee hills, forts and waterfalls — easy day trips from the estate, all within reach of Madikeri.
+                                </p>
                             </header>
+
+                            <section class="surroundings-group" aria-labelledby="nearby-heading">
+                                <div class="surroundings-group__head">
+                                    <span class="surroundings-group__icon mdi mdi-map-marker-radius" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="nearby-heading" class="surroundings-group__title">What's nearby</h3>
+                                        <p class="surroundings-group__hint">Landmarks around an 8&nbsp;km drive</p>
+                                    </div>
+                                </div>
+                                <ul class="surroundings-list">
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Rastrakavi Kuvempu Park</span>
+                                        <span class="surroundings-item__distance">8 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Nagarhole National Park</span>
+                                        <span class="surroundings-item__distance">8 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Madikeri Fort</span>
+                                        <span class="surroundings-item__distance">8 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Raja Seat</span>
+                                        <span class="surroundings-item__distance">8 km</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="surroundings-group" aria-labelledby="dining-heading">
+                                <div class="surroundings-group__head">
+                                    <span class="surroundings-group__icon mdi mdi-silverware-fork-knife" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="dining-heading" class="surroundings-group__title">Restaurants &amp; cafés</h3>
+                                        <p class="surroundings-group__hint">Local flavours a short drive away</p>
+                                    </div>
+                                </div>
+                                <ul class="surroundings-list">
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Coorg Vintage Flavours</span>
+                                        <span class="surroundings-item__distance">4 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Mangalore South Indian Family Restaurant</span>
+                                        <span class="surroundings-item__distance">4.1 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">G Town Mini Canteen</span>
+                                        <span class="surroundings-item__distance">4.1 km</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="surroundings-group" aria-labelledby="nature-heading">
+                                <div class="surroundings-group__head">
+                                    <span class="surroundings-group__icon mdi mdi-nature" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="nature-heading" class="surroundings-group__title">Natural beauty</h3>
+                                        <p class="surroundings-group__hint">Must-see Coorg landscape</p>
+                                    </div>
+                                </div>
+                                <ul class="surroundings-list">
+                                    <li class="surroundings-item surroundings-item--featured">
+                                        <span class="surroundings-item__name">Abbey Falls</span>
+                                        <span class="surroundings-item__meta">Waterfalls</span>
+                                        <span class="surroundings-item__distance">11 km</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section class="surroundings-group" aria-labelledby="airports-heading">
+                                <div class="surroundings-group__head">
+                                    <span class="surroundings-group__icon mdi mdi-airplane-takeoff" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="airports-heading" class="surroundings-group__title">Closest airports</h3>
+                                        <p class="surroundings-group__hint">Plan your arrival to Coorg</p>
+                                    </div>
+                                </div>
+                                <ul class="surroundings-list">
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Kannur International Airport</span>
+                                        <span class="surroundings-item__distance">60 km</span>
+                                    </li>
+                                    <li class="surroundings-item">
+                                        <span class="surroundings-item__name">Mysore Airport</span>
+                                        <span class="surroundings-item__distance">92 km</span>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <div class="surroundings-cta">
+                                <p>Want a day-trip plan from the estate? We are happy to help.</p>
+                                <div class="surroundings-cta__actions">
+                                    <a class="surroundings-cta__btn" href="tel:+919480290160">Call us</a>
+                                    <a class="surroundings-cta__link" href="https://www.google.com/maps/search/?api=1&amp;query=12.4145625,75.8138125" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+                                </div>
+                            </div>
                         </article>
                     </div>
-                    <div class="grid-column" style="margin-top: 60px">
-
-                        <h5>
-                            Restaurants & cafes
-                        </h5>
-
-                        <ul style="margin-top: -6px">
-                            <li>
-                                Coorg Vintage Flavours - 4km
-                            </li>
-                            <li>
-                                Mangalore South Indian Family Restaurant - 4.1km
-                            </li>
-                            <li>
-                                G Town Mini Canteen - 4.1km
-                            </li>
-
-                        </ul>
-
-
-                        <h5>
-                            Closest airports
-                        </h5>
-                        <ul>
-                            <li>
-                                Kannur International Airport - 60km
-                            </li>
-                            <li>
-                                Mysore Airport - 92km
-                            </li>
-
-                        </ul>
-                        <h5>
-                            Natural beauty
-                        </h5>
-                        <ul>
-                            <li>
-                                Abbey Falls (waterfalls) - 11km
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-
             </div>
         </div>
         <div class="entry-copyright">

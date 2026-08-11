@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-animations.css">
+    <link rel="stylesheet" href="assets/css/style-custom.css">
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -102,18 +103,53 @@
 
     <div class="content-wrap clearfix">
         <div class="entry entry-page">
-
             <div class="entry-content">
                 <div class="grid-container">
-                    <div class="entry-media grid-column">
-                        <img src="tmp/sample-about.jpg" alt="Brass lamp and jasmine garland on the brick wall at Chombuka" />
-                    </div>
-                    <div class="grid-column order-first">
-                        <h6> <i> A Home Away From Home </i> </h6>
-                        <p>
-                            Nestled amidst a lush coffee plantation, Chombuka offers a serene escape from the everyday. Wake to the melodies of chirping birds and enjoy proximity to Coorg's most sought-after tourist attractions. Our estate invites you to savor the quiet of nature walks, indulge in traditional Kodava cuisine right from the comfort of your private sitout, or simply revel in the tranquility that surrounds you.
-                        </p>
+                    <div class="grid-column no-animation estate-panel">
+                        <article class="estate">
+                            <header class="estate__intro">
+                                <h2 class="entry-title"><a>About</a></h2>
+                                <p class="estate__lead">
+                                    A quiet coffee-plantation stay near Madikeri — birdsong at dawn, Kodava flavours on the sitout, and Coorg’s best day trips close by.
+                                </p>
+                            </header>
 
+                            <div class="estate-about">
+                                <figure class="estate-about__media">
+                                    <img src="tmp/sample-about.jpg" alt="Brass lamp and jasmine garland on the brick wall at Chombuka" />
+                                </figure>
+                                <div>
+                                    <p class="estate-about__eyebrow">A home away from home</p>
+                                    <p class="estate-about__copy">
+                                        Nestled amidst a lush coffee plantation, Chombuka offers a serene escape from the everyday. Wake to the melodies of chirping birds and enjoy proximity to Coorg's most sought-after tourist attractions. Our estate invites you to savor the quiet of nature walks, indulge in traditional Kodava cuisine right from the comfort of your private sitout, or simply revel in the tranquility that surrounds you.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <section class="estate-group" aria-labelledby="about-highlights">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-pine-tree" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="about-highlights" class="estate-group__title">Why guests stay</h3>
+                                        <p class="estate-group__hint">The estate experience</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-nature" aria-hidden="true"></span> Coffee plantation</li>
+                                    <li class="estate-chip"><span class="mdi mdi-map-marker-radius" aria-hidden="true"></span> Near Madikeri sights</li>
+                                    <li class="estate-chip"><span class="mdi mdi-food" aria-hidden="true"></span> Kodava cuisine</li>
+                                    <li class="estate-chip"><span class="mdi mdi-home" aria-hidden="true"></span> Private sitout</li>
+                                </ul>
+                            </section>
+
+                            <div class="estate-cta">
+                                <p>Ready for a quiet Coorg escape?</p>
+                                <div class="estate-cta__actions">
+                                    <a class="estate-cta__btn" href="contact.html">Book a stay</a>
+                                    <a class="estate-cta__link" href="gallery.html">View gallery</a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>

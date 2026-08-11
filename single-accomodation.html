@@ -24,20 +24,12 @@
 
     <link rel="icon" href="tmp/logo.png" type="image/png">
 
-
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="assets/css/materialdesignicons.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-animations.css">
-    <style>
-        .rule li {
-            padding-bottom: 15px;
-            list-style-type: square;
-            padding-left: 6px;
-            margin-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style-custom.css">
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -112,75 +104,100 @@
     <div class="content-wrap clearfix">
         <div class="entry entry-page">
             <div class="entry-content">
-                <div class="grid-container" style="padding-left: 40px; padding-right: 40px">
-                    <article class="entry-accomodation">
-                        <header class="entry-header">
-                            <h2 class="entry-title"><a>Accomodation</a></h2>
+                <div class="grid-container">
+                    <div class="grid-column no-animation estate-panel">
+                        <article class="estate entry-accomodation">
+                            <header class="entry-header estate__intro">
+                                <h2 class="entry-title"><a>Accomodation</a></h2>
+                                <p class="estate__lead">
+                                    Chombuka is set in Madikeri, 13&nbsp;km from Madikeri Fort and Raja Seat. Balcony rooms, free parking and WiFi — with Abbey Falls about 17&nbsp;km away.
+                                </p>
+                            </header>
 
-                            <p>
-                                Chombuka is set in Madikeri, 13 km from Madikeri Fort and 13 km from Raja Seat.
-                                This property offers access to a balcony, free private parking and free WiFi. Abbi Falls is 17 km from the homestay.
-                            </p>
-                            <p>
-                                The homestay comes with a flat-screen TV. Towels and bed linen are featured in the homestay.
-                            </p>
-                            <p>
-                                The nearest airport is Kannur International Airport, 93 km from the homestay.
-                            </p>
-                            <h5>
-                                House rules
-                            </h5>
-                            <ul class="rule">
-                                <li>
-                                    <b> Check-in: </b> From 2:00 PM to 7:00 PM
-                                </li>
-                                <li>
-                                    <b>
-                                        Check-out:
-                                    </b>
-                                    From 9:00 AM to 11:00 AM
-                                </li>
-                                <li>
-                                    <b> Cancellation/ prepayment:  </b>Cancellation and prepayment policies vary according to accommodation type.
-                                    Call: 9480290160 / 9449433431 or Email: <a href="mailto:info@chomubuka.com"> info@chomubuka.com </a>
-                                </li>
-                                <li>
-                                    <b> Children and beds: </b> Children of any age are welcome. For prices and occupancy details, please call 9480290160 / 9449433431.
-                                    <br /> Cots and extra beds are not available at this property.
-                                </li>
-                                <li>
-                                    <b> No age restriction: </b> There is no age requirement for check-in
-                                </li>
-                                <li>
-                                    <b> Pets: </b> Pets are not allowed
-                                </li>
-                                <li>
-                                    <b> Smoking: </b> Smoking is not allowed
-                                </li>
-                                <li>
-                                    <b> Parties: </b> Parties/events are not allowed
-                                </li>
-                            </ul>
+                            <section class="estate-group" aria-labelledby="stay-highlights">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-home" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="stay-highlights" class="estate-group__title">Your stay includes</h3>
+                                        <p class="estate-group__hint">Comfort on the estate</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-wifi" aria-hidden="true"></span> Free WiFi</li>
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-parking" aria-hidden="true"></span> Free parking</li>
+                                    <li class="estate-chip"><span class="mdi mdi-television" aria-hidden="true"></span> Flat-screen TV</li>
+                                    <li class="estate-chip"><span class="mdi mdi-nature" aria-hidden="true"></span> Balcony access</li>
+                                    <li class="estate-chip"><span class="mdi mdi-shower" aria-hidden="true"></span> Towels &amp; linen</li>
+                                </ul>
+                            </section>
 
+                            <section class="estate-group" aria-labelledby="house-rules">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-clock" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="house-rules" class="estate-group__title">House rules</h3>
+                                        <p class="estate-group__hint">Please note before you arrive</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-list">
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Check-in</span>
+                                            <p class="estate-item__detail">From 2:00 PM to 7:00 PM</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Check-out</span>
+                                            <p class="estate-item__detail">From 9:00 AM to 11:00 AM</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Cancellation / prepayment</span>
+                                            <p class="estate-item__detail">Policies vary by stay. Call 9480290160 / 9449433431 or email <a href="mailto:info@chombuka.com">info@chombuka.com</a>.</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Children &amp; beds</span>
+                                            <p class="estate-item__detail">Children of any age are welcome. Call for occupancy details. Cots and extra beds are not available.</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Pets</span>
+                                            <p class="estate-item__detail">Pets are not allowed</p>
+                                        </div>
+                                        <span class="estate-item__badge">No</span>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Smoking</span>
+                                            <p class="estate-item__detail">Smoking is not allowed</p>
+                                        </div>
+                                        <span class="estate-item__badge">No</span>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Parties / events</span>
+                                            <p class="estate-item__detail">Parties and events are not allowed</p>
+                                        </div>
+                                        <span class="estate-item__badge">No</span>
+                                    </li>
+                                </ul>
+                            </section>
 
-
-
-                            <!--<p>
-                                Call: 9480290160 / 9449433431 <br />
-                                Email: <a href="mailto:info@chomubuka.com"> info@chomubuka.com </a>
-                            </p>-->
-                            <!--<a class="accomodation-price"><span class="currency">â‚¹ </span><span class="price">4000</span><span class="price-per"> / night</span></a>-->
-                            <a href="contact.html"> <button type="submit" class="button-color">Book Now</button> </a>
-                            <br /> <br />
-
-                        </header>
-                    </article>
-
-
-
-
+                            <div class="estate-cta">
+                                <p>Enquire for dates and rates — we reply on WhatsApp or phone.</p>
+                                <div class="estate-cta__actions">
+                                    <a class="estate-cta__btn" href="contact.html">Book Now</a>
+                                    <a class="estate-cta__link" href="tel:+919480290160">Call 9480290160</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
             </div>
         </div>
         <div class="entry-copyright">

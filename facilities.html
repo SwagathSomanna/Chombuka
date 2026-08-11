@@ -24,20 +24,12 @@
 
     <link rel="icon" href="tmp/logo.png" type="image/png">
 
-
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
     <link rel="stylesheet" href="assets/css/materialdesignicons.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-animations.css">
-    <style>
-        .rule li {
-            padding-bottom: 5px;
-            list-style-type: square;
-            padding-left: 6px;
-            margin-left: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style-custom.css">
 	<script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
@@ -113,174 +105,136 @@
         <div class="entry entry-page">
             <div class="entry-content">
                 <div class="grid-container">
-
-                    <div class="grid-column no-animation">
-                        <article class="entry-accomodation">
-                            <header class="entry-header">
-
+                    <div class="grid-column no-animation estate-panel">
+                        <article class="estate entry-accomodation">
+                            <header class="entry-header estate__intro">
                                 <h2 class="entry-title"><a>Facilities</a></h2>
-                                <h5 style="margin-top:30px">
-                                    Most popular facilities
-                                </h5>
-
-                                <ul class="rule">
-                                    <li> Free parking </li>
-                                    <li> Free WiFi </li>
-                                    <li> Breakfast </li>
-
-                                </ul>
-                                <h5>
-                                    Bathroom
-                                </h5>
-                                <ul class="rule">
-                                    <li>
-                                        Toilet paper
-                                    </li>
-                                    <li>
-                                        Towels
-                                    </li>
-                                    <li>
-                                        Bidet
-                                    </li>
-                                    <li>
-                                        Private bathroom
-                                    </li>
-                                    <li>
-                                        Toilet
-                                    </li>
-                                    <li>
-                                        Free toiletries
-                                    </li>
-                                    <li>
-                                        Bath
-                                    </li>
-                                    <li>
-                                        Shower
-                                    </li>
-                                </ul>
-
-                                <h5>
-                                    Bedroom
-                                </h5>
-                                <ul class="rule">
-                                    <li> Linen </li>
-                                    <li>
-                                        Wardrobe or closet
-                                    </li>
-                                </ul>
-
-                                <h5>
-                                    Food & Drink
-                                </h5>
-                                <ul class="rule">
-
-                                    <li>
-                                        Tea/Coffee maker
-                                    </li>
-                                </ul>
-                                <h5>
-                                    Internet
-                                </h5>
-                                <ul class="rule">
-
-                                    <li>
-                                        WiFi is available in all areas and is free of charge.
-                                    </li>
-                                </ul>
-
-                                
+                                <p class="estate__lead">
+                                    Everything you need for an easy stay — from free WiFi and parking to garden views and a private bathroom.
+                                </p>
                             </header>
+
+                            <section class="estate-group" aria-labelledby="popular-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-check-circle-outline" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="popular-facilities" class="estate-group__title">Most popular</h3>
+                                        <p class="estate-group__hint">Guest favourites</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-parking" aria-hidden="true"></span> Free parking</li>
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-wifi" aria-hidden="true"></span> Free WiFi</li>
+                                    <li class="estate-chip estate-chip--accent"><span class="mdi mdi-coffee" aria-hidden="true"></span> Breakfast</li>
+                                </ul>
+                            </section>
+
+                            <section class="estate-group" aria-labelledby="bathroom-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-shower" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="bathroom-facilities" class="estate-group__title">Bathroom</h3>
+                                        <p class="estate-group__hint">Private &amp; well stocked</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip">Private bathroom</li>
+                                    <li class="estate-chip">Shower</li>
+                                    <li class="estate-chip">Bath</li>
+                                    <li class="estate-chip">Bidet</li>
+                                    <li class="estate-chip">Towels</li>
+                                    <li class="estate-chip">Toilet paper</li>
+                                    <li class="estate-chip">Free toiletries</li>
+                                </ul>
+                            </section>
+
+                            <section class="estate-group" aria-labelledby="bedroom-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-sofa" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="bedroom-facilities" class="estate-group__title">Bedroom &amp; living</h3>
+                                        <p class="estate-group__hint">Rest and unwind</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip">Linen</li>
+                                    <li class="estate-chip">Wardrobe or closet</li>
+                                    <li class="estate-chip">Dining area</li>
+                                    <li class="estate-chip"><span class="mdi mdi-television" aria-hidden="true"></span> Flat-screen TV</li>
+                                </ul>
+                            </section>
+
+                            <section class="estate-group" aria-labelledby="kitchen-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-silverware-fork-knife" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="kitchen-facilities" class="estate-group__title">Kitchen &amp; drink</h3>
+                                        <p class="estate-group__hint">Simple self-serve comforts</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip"><span class="mdi mdi-coffee" aria-hidden="true"></span> Tea / coffee maker</li>
+                                    <li class="estate-chip"><span class="mdi mdi-kettle" aria-hidden="true"></span> Electric kettle</li>
+                                    <li class="estate-chip">Dining table</li>
+                                    <li class="estate-chip">Kitchenware</li>
+                                </ul>
+                            </section>
+
+                            <section class="estate-group" aria-labelledby="outdoors-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-nature" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="outdoors-facilities" class="estate-group__title">Outdoors &amp; views</h3>
+                                        <p class="estate-group__hint">Estate air and greenery</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-chips">
+                                    <li class="estate-chip">Balcony</li>
+                                    <li class="estate-chip">Garden</li>
+                                    <li class="estate-chip">Garden view</li>
+                                </ul>
+                            </section>
+
+                            <section class="estate-group" aria-labelledby="practical-facilities">
+                                <div class="estate-group__head">
+                                    <span class="estate-group__icon mdi mdi-wifi" aria-hidden="true"></span>
+                                    <div>
+                                        <h3 id="practical-facilities" class="estate-group__title">Practical details</h3>
+                                        <p class="estate-group__hint">Connectivity, parking &amp; language</p>
+                                    </div>
+                                </div>
+                                <ul class="estate-list">
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Internet</span>
+                                            <p class="estate-item__detail">WiFi is available in all areas and is free of charge.</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Parking</span>
+                                            <p class="estate-item__detail">Free private parking on site — reservation not needed.</p>
+                                        </div>
+                                    </li>
+                                    <li class="estate-item">
+                                        <div>
+                                            <span class="estate-item__name">Languages spoken</span>
+                                            <p class="estate-item__detail">English and Hindi</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <div class="estate-cta">
+                                <p>See how the rooms feel in real photos.</p>
+                                <div class="estate-cta__actions">
+                                    <a class="estate-cta__btn" href="gallery.html">Browse gallery</a>
+                                    <a class="estate-cta__link" href="contact.html">Ask a question</a>
+                                </div>
+                            </div>
                         </article>
                     </div>
-                    <div class="grid-column" style="margin-top: 60px">
-
-                        <h5>
-                            View
-                        </h5>
-
-                        <ul style="margin-top: -6px">
-                            <li>
-                                Garden view
-                            </li>
-                            <li>
-                                View
-                            </li>
-
-
-                        </ul>
-
-
-                        <h5>
-                            Outdoors
-                        </h5>
-                        <ul>
-                            <li>
-                                Balcony
-                            </li>
-                            <li>
-                                Garden
-                            </li>
-
-                        </ul>
-                        <h5>
-                            Kitchen
-                        </h5>
-                        <ul>
-                            <li>
-                                Dining table
-                            </li>
-                            <li>
-                                Kitchenware
-                            </li>
-                            <li>
-                                Electric kettle
-                            </li>
-                        </ul>
-
-                        <h5>
-                            Living Area
-                        </h5>
-                        <ul>
-                            <li>
-                                Dining area
-                            </li>
-
-                        </ul>
-
-                        <h5>
-                            Media & Technology
-                        </h5>
-                        <ul>
-                            <li>
-                                Flat-screen TV
-                            </li>
-
-                        </ul>
-
-                        <h5>
-                            Languages spoken
-                        </h5>
-                        <ul>
-                            <li>
-                                English
-                            </li>
-                            <li>
-                                Hindi
-                            </li>
-
-                        </ul>
-                        <h5>
-                            Parking
-                        </h5>
-                        <ul>
-
-                            <li>
-                                Free private parking is possible on site (reservation is not needed).
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-
             </div>
         </div>
         <div class="entry-copyright">
